@@ -1,0 +1,12 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int a, int b) {
+    string A = to_string(a);
+    string B = to_string(b);
+    int answer_1 = stoi(A + B);
+    int answer_2 = stoi(B + A);
+    return answer_1 > answer_2 ? answer_1 : answer_2;
+}

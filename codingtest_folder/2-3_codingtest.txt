@@ -1,0 +1,14 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+vector<int> solution(vector<int> num_list, int n) {
+    for (int i = 0; i < n; i++)
+    {
+        int k = num_list[0];
+        num_list.erase(num_list.begin());
+        num_list.emplace_back(k);
+    }
+    return num_list;
+}
